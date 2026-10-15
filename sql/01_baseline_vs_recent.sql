@@ -15,6 +15,3 @@ SELECT w.portname,
                   / AVG(CASE WHEN d.date BETWEEN w.base_start AND w.base_end THEN d.n_total END) - 1), 1) AS pct_change
 FROM windows w JOIN daily d ON d.portname = w.portname
 GROUP BY w.portname ORDER BY w.portname
-"""
-sql_table = con.sql(Q1).df()
-sql_table
