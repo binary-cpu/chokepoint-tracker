@@ -1,5 +1,4 @@
 -- Baseline vs last 28 days, daily transits. Source: UN Global Platform; IMF PortWatch.
-Q1 = """
 WITH windows AS (
   SELECT * FROM (VALUES
     ('Suez Canal',           DATE '2023-01-01', DATE '2023-10-31'),
