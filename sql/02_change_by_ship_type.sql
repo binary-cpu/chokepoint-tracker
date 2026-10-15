@@ -1,5 +1,4 @@
-
-Q2 = """
+-- Change by ship type, baseline vs last 28 days. Source: UN Global Platform; IMF PortWatch.
 WITH windows AS (
   SELECT * FROM (VALUES
     ('Suez Canal',           DATE '2023-01-01', DATE '2023-10-31'),
@@ -20,5 +19,3 @@ SELECT w.portname, REPLACE(l.ship_type, 'n_', '') AS ship_type,
              / NULLIF(AVG(CASE WHEN l.date BETWEEN w.base_start AND w.base_end THEN l.transits END), 0) - 1), 1) AS pct_change
 FROM windows w JOIN long l ON l.portname = w.portname
 GROUP BY w.portname, l.ship_type ORDER BY w.portname, l.ship_type
-"""
-con.sql(Q2).df()
