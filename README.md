@@ -4,6 +4,8 @@ How have the 2026 disruptions changed shipping through Hormuz, Bab el-Mandeb and
 
 **Live dashboard:** https://chokepoint-tracker-8wmhe8a35vakpsbw9vkgkh.streamlit.app/ (loads current data, so its numbers can differ from the snapshot below; the free host may take a moment to wake up).
 
+![Screenshot of the Chokepoint Tracker dashboard](dashboard.png)
+
 **Data snapshot for this write-up:** through 2026-10-11 (accessed 2026-10-14). Source: UN Global Platform; IMF PortWatch. Daily AIS-observed ship transits at 28 chokepoints, 2019 to 2026. Raw data is fetched fresh by the notebooks and not stored here.
 
 **Note:** notebook 02 was run on the 2026-10-04 snapshot, so its figures differ slightly from the 2026-10-11 figures in notebooks 03-05 and this page.
