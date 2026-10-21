@@ -36,3 +36,5 @@ Notebooks: 01 data pull, 02 data contract and cleaning log, 03 SQL layer (querie
 
 ## What's next
 Weekly updates, and linking changes to sourced events.
+
+Companion project: [port-tracker](https://github.com/binary-cpu/port-tracker) uses the same source at port level, with a "time machine" dashboard. Its port-level data show the Gulf-region countries falling in March 2026, matching the timing of the Hormuz decline here; both come from the same source and method, so this is not independent confirmation.
